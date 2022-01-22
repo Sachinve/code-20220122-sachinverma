@@ -3,10 +3,11 @@
 ## Installing locally
 
 - Create a python virtualenv
+- Install the package locally to your virtualenv
 
----
 
-```sh
+
+```bash
 $ git clone git@github.com:Sachinve/code-20220122-sachinverma.git code-20220122-sachinverma
 $ cd code-20220122-sachinverma
 $ pip install -e .
@@ -52,5 +53,23 @@ $ python gen_data.py input.json 1000
 from bigjsonprocessor.processor import big_json_transformer
 
 big_json_transformer('input.json', 'output.json')
+
+```
+
+### Sample Output
+
+```bash
+
+>>> from bigjsonprocessor.processor import big_json_transformer
+>>> big_json_transformer('input.json', 'output.json')
+Height cannot be zero
+_num_records ==> 99999
+moderately_obese ==> 8336
+normal_weight ==> 10303
+over_weight ==> 8218
+severely_obese ==> 8111
+under_weight ==> 14498
+very_severely_obese ==> 50533
+>>> 
 
 ```
