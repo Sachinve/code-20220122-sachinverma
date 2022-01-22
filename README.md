@@ -14,7 +14,7 @@ $ pip install -e .
 
 ```
 
-## Sample data
+## Generate Sample JSON data
 
 - Use file `bigjsonprocessor/input.json` as your input file
 - Generate sample data with following script if you want
@@ -40,9 +40,9 @@ with open(sys.argv[1], 'wt') as fp:
 
 ---
 
-### Generate 1000 records in the input json
+### Generate 100000 records in the input json
 ```sh
-$ python gen_data.py input.json 1000
+$ python gen_data.py input.json 100000
 
 ```
 
